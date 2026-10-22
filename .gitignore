@@ -1,0 +1,23 @@
+# User-level source data stays local.
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.zip
+data/raw/
+data/private/
+data/marts/
+event_log*/
+.env
+.env.*
+!.env.example
+*credentials*.json
+*token*.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+Thumbs.db

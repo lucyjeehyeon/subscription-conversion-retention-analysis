@@ -1,0 +1,10 @@
+# Notebook exploration only. The metric reproduction script uses the standard library.
+# Historical versions were not recorded; this is not a frozen original environment.
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+statsmodels
+ipython
+koreanize-matplotlib

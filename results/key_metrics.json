@@ -1,0 +1,123 @@
+{
+  "method": "Reaggregation of supplied marts, not reconstruction from raw event logs.",
+  "activation_cohorts": {
+    "post_2023_05_11": {
+      "users": 46055,
+      "positive_users": 2788,
+      "rate_pct": 6.05,
+      "mean_first_paid_amount": 34957.72,
+      "mean_first_discount_amount": 1074.41
+    },
+    "pre_2022_05_11": {
+      "users": 27543,
+      "positive_users": 2773,
+      "rate_pct": 10.07,
+      "mean_first_paid_amount": 30347.51,
+      "mean_first_discount_amount": 5124.92
+    }
+  },
+  "conversion_segments_post": {
+    "inactive": {
+      "users": 21137,
+      "positive_users": 228,
+      "rate_pct": 1.08
+    },
+    "explorer": {
+      "users": 12419,
+      "positive_users": 1363,
+      "rate_pct": 10.98
+    },
+    "weak_learner": {
+      "users": 6973,
+      "positive_users": 235,
+      "rate_pct": 3.37
+    },
+    "strong_learner": {
+      "users": 5526,
+      "positive_users": 962,
+      "rate_pct": 17.41
+    }
+  },
+  "retention_conditions": {
+    "all_periods_no_observability_filter": {
+      "0-4": {
+        "users": 1732,
+        "positive_users": 802,
+        "rate_pct": 46.3
+      },
+      "5-13": {
+        "users": 1883,
+        "positive_users": 1071,
+        "rate_pct": 56.88
+      },
+      "14+": {
+        "users": 1586,
+        "positive_users": 1003,
+        "rate_pct": 63.24
+      }
+    },
+    "all_periods_observable_60d": {
+      "0-4": {
+        "users": 1558,
+        "positive_users": 732,
+        "rate_pct": 46.98
+      },
+      "5-13": {
+        "users": 1690,
+        "positive_users": 973,
+        "rate_pct": 57.57
+      },
+      "14+": {
+        "users": 1408,
+        "positive_users": 906,
+        "rate_pct": 64.35
+      }
+    },
+    "post_removal_no_observability_filter": {
+      "0-4": {
+        "users": 1079,
+        "positive_users": 510,
+        "rate_pct": 47.27
+      },
+      "5-13": {
+        "users": 1427,
+        "positive_users": 835,
+        "rate_pct": 58.51
+      },
+      "14+": {
+        "users": 1362,
+        "positive_users": 856,
+        "rate_pct": 62.85
+      }
+    },
+    "post_removal_observable_60d": {
+      "0-4": {
+        "users": 905,
+        "positive_users": 440,
+        "rate_pct": 48.62
+      },
+      "5-13": {
+        "users": 1234,
+        "positive_users": 737,
+        "rate_pct": 59.72
+      },
+      "14+": {
+        "users": 1184,
+        "positive_users": 759,
+        "rate_pct": 64.1
+      }
+    }
+  },
+  "data_checks": {
+    "activation_users": 73598,
+    "retention_users": 5201,
+    "duplicate_or_missing_user_keys": 0,
+    "max_activity_days": 32.0,
+    "activity_days_over_30": 54
+  },
+  "limits": [
+    "Content experience mixes prepayment and full 7-day behavior windows.",
+    "The activity-day field exceeds 30 in some rows; confirm its construction before calling it a rolling 30-day window.",
+    "Retrospective group differences are not the causal effect of onboarding or learning interventions."
+  ]
+}
